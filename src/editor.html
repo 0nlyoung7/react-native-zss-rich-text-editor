@@ -1655,16 +1655,17 @@
 			}
 
 			html, body {
+				width:100%;
 				padding: 0;
 				margin: 0;
 				font-family: Arial, Helvetica, sans-serif;
 				font-size:1em;
 				color:#2d4150;
+				width: 100%;
+				overflow: hidden;
 			}
 
 			body {
-				padding-left:10px;
-				padding-right:10px;
 				padding-top: 0px;
 				padding-bottom: 0px;
 				overflow-y: scroll;
@@ -1677,7 +1678,7 @@
 			}
 
 			img {
-				max-width: 98%;
+				max-width: 100%;
 				margin-left:auto;
 				margin-right:auto;
 				display: block;
@@ -1698,8 +1699,8 @@
 			}
 
 			#zss_editor_content {
-				padding-left: 10px;
-				padding-right: 10px;
+				padding-left: 0px;
+				padding-right: 0px;
 			}
 
 			div.zss_editor_title {
@@ -1711,8 +1712,8 @@
 			}
 
 			#zss_editor_title {
-				padding-left: 10px;
-				padding-right: 10px;
+				padding-left: 0px;
+				padding-right: 0px;
 				display:none; /* hideTitle */
 			}
 
@@ -1750,7 +1751,8 @@
 		<!-- ZSSRichTextEditor Editable Content -->
 		<div id="zss_editor_title" class="zss_editor_title" contenteditable="true" placeholder="" disableLineBreaks="true"></div>
 		<div id="separatorContainer"><hr></div>
-		<div id="zss_editor_content" class="zss_editor_content" contenteditable="true" placeholder=""></div>
+		<div id="zss_editor_content" class="zss_editor_content" contenteditable="true" placeholder="">
+		</div>
 		<div id="zss_editor_footer"></div>
 	</body>
 </html>
